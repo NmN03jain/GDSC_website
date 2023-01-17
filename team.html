@@ -1,0 +1,727 @@
+<html>
+
+<head>
+
+    <title>Google Developer Student Club IIST</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicons/site.webmanifest">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,500" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/svg.css">
+
+
+    <style>
+        .flex-container {
+            /* We first create a flex layout context */
+            display: flex;
+
+            /* Then we define the flow direction 
+             and if we allow the items to wrap 
+           * Remember this is the same as:
+           * flex-direction: row;
+           * flex-wrap: wrap;
+           */
+            flex-flow: row wrap;
+
+            /* Then we define how is distributed the remaining space */
+            justify-content: space-around;
+
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .flex-item {
+            background: tomato;
+            padding: 5px;
+            width: 200px;
+            height: 150px;
+            margin-top: 10px;
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+        }
+
+
+
+
+        @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+body,html{
+    width:100%;
+    height: 100%;
+    background-size: 400% 400%;
+  }
+  *{
+    margin:0;
+    padding:0;
+  }
+  .sticky{
+    background: #ffffff;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    background-size: 400% 400%;
+    position: relative;
+  }
+  .bubbles{
+    position: relative;
+    width:100%;
+    height: 100%;
+    z-index:0;
+    overflow:hidden;
+    top:0;
+    left:0;
+  }
+  .bubble{
+    position: absolute;
+    bottom:-100px;
+    width:80px;
+    height: 80px;
+    border-radius:50%;
+    
+    animation: rise 10s infinite ease-in;
+  }
+  .bubble:nth-child(1){
+    width:40px;
+    height:40px;
+    left:10%;
+    animation-duration:8s;
+  }
+  .bubble:nth-child(2){
+    width:20px;
+    height:20px;
+    left:20%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(3){
+    width:50px;
+    height:50px;
+    left:35%;
+    animation-duration:7s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(4){
+    width:80px;
+    height:80px;
+    left:50%;
+    animation-duration:11s;
+    animation-delay:0s;
+  }
+  .bubble:nth-child(5){
+    width:35px;
+    height:35px;
+    left:55%;
+    animation-duration:6s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(6){
+    width:45px;
+    height:45px;
+    left:65%;
+    animation-duration:8s;
+    animation-delay:3s;
+  }
+  .bubble:nth-child(7){
+    width:90px;
+    height:90px;
+    left:70%;
+    animation-duration:12s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(8){
+    width:25px;
+    height:25px;
+    left:80%;
+    animation-duration:6s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(9){
+    width:15px;
+    height:15px;
+    left:70%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(10){
+    width:90px;
+    height:90px;
+    left:25%;
+    animation-duration:10s;
+    animation-delay:4s;
+  }
+  @keyframes rise{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+  }
+  
+  
+
+
+
+    </style>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description"
+        content="GDSC IIST (Google Developer Student Club IIST Vellore) is a Google program for university students, with an aim to help students build their development skills.">
+
+
+
+    </head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1042.0"
+    data-gr-ext-installed="">
+
+
+
+
+
+
+    <section class="sticky">
+        <div class="bubbles">
+          <div class="bubble" style="background:#4285F4;"></div>
+          <div class="bubble"style="background:#DB4437"></div>
+          <div class="bubble"style="background:#F4B400"></div>
+          <div class="bubble"style="background:#4285F4;"></div>
+          <div class="bubble"style="background:#0F9D58"></div>
+          <div class="bubble" style="background:#4285F4;"></div>
+          <div class="bubble"style="background:#DB4437"></div>
+          <div class="bubble"style="background:#F4B400"></div>
+          <div class="bubble"style="background:#4285F4;"></div>
+          <div class="bubble"style="background:#0F9D58"></div>
+          <div class="bubble" style="background:#4285F4;"></div>
+          <div class="bubble"style="background:#DB4437"></div>
+          <div class="bubble"style="background:#F4B400"></div>
+          <div class="bubble"style="background:#4285F4;"></div>
+          <div class="bubble"style="background:#0F9D58"></div>
+          
+          <div class="navbar">
+            <a href="./">
+                <div class="navbar-dsc-logo">
+    
+                    <img data-aos="fade-up" src="images/DSClogo.svg" class="logo-nav aos-init aos-animate" alt="GDSC IIST"
+                        style="display: none;">
+                    <img data-aos="fade-up" src="images/DSClogo.svg" class="logo-nav-light aos-init aos-animate"
+                        alt="GDSC IIST">
+                </div>
+            </a>
+        </div>
+        <div class="main" id="home-scroll">
+            <div class="main-text-holder">
+                <h1 data-aos="fade-up" class="barlow-extralight aos-init aos-animate">
+                    The Team
+                </h1>
+                <h2 data-aos="fade-up" class="barlow-medium aos-init aos-animate">
+                    Presenting board of 2020-2021
+                </h2>
+            </div>
+            <div class="main-down-arrow" id="down-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.55 44.393">
+                    <g id="Group_2" data-name="Group 2" transform="translate(-966 -967.48)">
+                        <path id="Path_1" data-name="Path 1" d="M982,967.98V1011.1" transform="translate(-1.5)" fill="none"
+                            stroke="#141414" stroke-linecap="round" stroke-width="1"></path>
+                        <path id="Path_2" data-name="Path 2" d="M966.813,997.8l13.973,13.577L994.363,997.8"
+                            transform="translate(-0.313)" fill="none" stroke="#141414" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1"></path>
+                    </g>
+                </svg>
+            </div>
+            <img src="images/team.svg" class="main-image" alt="GDSC IIST Team">
+        </div>
+
+        </div>
+      </section>
+
+
+
+
+      <div class="container-main holded-container container-main-last" id="our-work-scroll">
+        
+        <div class="flex-container">
+            
+            
+            <div class="icons" id="#">
+
+                
+
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Mr. Rakesh Jain.jpg" alt="Mr. Rakesh Jain">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Mr. Rakesh Jain</h3>
+                        <p class="text-center barlow-medium">Faculty Advisor</p>
+                    </div>
+
+                </div>
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Sarika Purohit.jpg" alt="Sarika Purohit">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Sarika Purohit</h3>
+                        <p class="text-center barlow-medium">President</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    
+
+
+    <div class="container-main holded-container container-main-last" id="our-work-scroll">
+        <h1 class="barlow-medium text-center" style="padding-bottom: 90px;">
+            Technical Team 
+        </h1>
+        <h2 class="barlow-medium text-center" style="padding-bottom: 90px;">
+            Web Development Team 
+        </h2>
+        <div class="flex-container">
+            <div class="icons" id="#">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Prasoon Bhargava (1).jpg" alt="Prasoon Bhargava">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Prasoon Bhargava</h3>
+                        <p class="text-center barlow-medium">Web Development Lead</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="icons" id="#" style="margin-top: 4%;">
+
+                
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Naman jain.jpg" alt="Naman Jain">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Naman Jain</h3>
+                        <p class="text-center barlow-medium">Web Developer</p>
+                    </div>
+
+                </div>
+
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Vibha Mishra.jpg" alt="Vibha Mishra">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Vibha Mishra</h3>
+                        <p class="text-center barlow-medium">Web Developer</p>
+                    </div>
+
+                </div>
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Rishikesh Hedaoo.jpg" alt="Rishikesh Hedaoo">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Rishikesh Hedaoo</h3>
+                        <p class="text-center barlow-medium">Web Developer</p>
+                    </div>
+
+                </div>
+
+                
+
+
+
+            </div>
+
+            <div class="icons" id="#" style="margin-top: 4%;">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Prajwal Atkare.jpg" alt="Prajwal Atkare">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Prajwal Atkare</h3>
+                        <p class="text-center barlow-medium">Web Developer</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container-main holded-container container-main-last" id="our-work-scroll">
+        <h2 class="barlow-medium text-center" style="padding-bottom: 90px;">
+            AI/ML Team
+        </h2>
+        <div class="flex-container">
+            <div class="icons" id="#">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/KAJAL DHANAWAT.jpg" alt="Kajal Dhanawat">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Kajal Dhanawat</h3>
+                        <p class="text-center barlow-medium">AI/ML Developer</p>
+                    </div>
+
+                </div>
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Aadarsh Yadav.jpeg" alt="Adarsh Yadav">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Aadarsh Yadav</h3>
+                        <p class="text-center barlow-medium">AI/ML Developer</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container-main holded-container container-main-last" id="our-work-scroll">
+        <h2 class="barlow-medium text-center" style="padding-bottom: 90px;">
+            Android Development Team
+        </h2>
+        <div class="flex-container">
+            
+            <div class="icons" id="#">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Luv Sahu.jpg" alt="Luv Kumar Sahu">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Luv Kumar Sahu</h3>
+                        <p class="text-center barlow-medium">Android Developer</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container-main holded-container container-main-last" id="our-work-scroll">
+        <h2 class="barlow-medium text-center" style="padding-bottom: 90px;">
+            Cloud Computing Team
+        </h2>
+        <div class="flex-container">
+            
+            <div class="icons" id="#">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Aditya Jain.jpg" alt="Aditya Jain">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Aditya Jain</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="container-main holded-container container-main-last" id="our-work-scroll">
+        <h2 class="barlow-medium text-center" style="padding-bottom: 90px;">
+            Competitive Programming Team
+        </h2>
+        <div class="flex-container">
+            <div class="icons" id="#">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Ujjawal Patidar.jpg"
+                        alt="Ujjawal Patidar">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Ujjawal Patidar</h3>
+                        <p class="text-center barlow-medium">Competitive Programmer</p>
+                    </div>
+
+                </div>
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Magneto.jpg" alt="Natwar Rathor">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Natwar Rathore</h3>
+                        <p class="text-center barlow-medium">Competitive Programmer</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="container-main holded-container container-main-last" id="our-work-scroll">
+        <h2 class="barlow-medium text-center" style="padding-bottom: 90px;">
+           Data Science Team
+        </h2>
+        <div class="flex-container">
+            <div class="icons" id="#">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/rishab.jpg"
+                        alt="Rishabh Rathore">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Rishabh Rathore</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div class="container-main holded-container container-main-last" id="our-work-scroll">
+        <h2 class="barlow-medium text-center" style="padding-bottom: 90px;">
+            Cyber Security Team
+        </h2>
+        <div class="flex-container">
+            <div class="icons" id="#">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Vasu Namdev.jpg"
+                        alt="Vasu Namdev">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Vasu Namdev</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Yogesh Sharma.jpg" alt="Yogesh Sharma">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Yogesh Sharma</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+
+    <div class="container-main holded-container container-main-last" id="our-work-scroll">
+        <h1 class="barlow-medium text-center" style="padding-bottom: 90px;">
+            Non-Technical Team 
+        </h1>
+
+        <h2 class="barlow-medium text-center" style="padding-bottom: 90px;">
+            Graphic Design And Creativity Team
+        </h2>
+        <div class="flex-container">
+            
+            <div class="icons" id="#">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Dheeraj Yadav.png" alt="Dheeraj Yadav">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Dheeraj Yadav</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Vidhan.jpeg" alt="Vidhan Lonare">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Vidhan Lonare</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Surendra Chourasiya.jpg" alt="Surendra Chourasiya">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Surendra Chourasiya</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-main holded-container container-main-last" id="our-work-scroll">
+        <h2 class="barlow-medium text-center" style="padding-bottom: 90px;">
+            Event Management Team
+        </h2>
+        <div class="flex-container">
+ 
+            <div class="icons" id="#">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/krishna Soni.jpg" alt="Krishna Soni">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">krishna Soni</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Ananya Chandel.jpg" alt="Ananya Chandel">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Ananya Chandel</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Harshal Thakur.jpg" alt="Harshal Thakur">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Harshal Thakur</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="icons" id="#">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Astitva Shrivastava.jpg" alt="Astitva Shrivastava">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Astitva Shrivastava</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div class="container-main holded-container container-main-last" id="our-work-scroll">
+        <h2 class="barlow-medium text-center" style="padding-bottom: 90px;">
+            Social Media & Outreach Team
+        </h2>
+        <div class="flex-container">
+            
+            <div class="icons" id="#">
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Sonam Vitthal (1).jpg" alt="Sonam Vitthal">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Sonam Vitthal</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+                </div>
+            <div class="icons" id="#">
+
+                
+
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/Piyush Mandloi.jpeg" alt="Piyush Mandloi">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Piyush Mandloi</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+
+                <div class="circle-icon-holder">
+
+                    <img class="circle-icon" src="./images/Member photos/KARTIK VERMA.jpg" alt="Kartik Verma">
+                    <div class="circle-icon-caption">
+                        <h3 class="text-center barlow-thin">Kartik Verma</h3>
+                        <p class="text-center barlow-medium">Developer</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer container-main  container-main-last">
+        <div class="dark-light-toggle barlow-medium text-center" id="dark-light-toggle">
+            <p>I want dark mode</p>
+        </div>
+    </div>
+    
+    <!-- Footer Begins -->
+    <div class="footer container-main  container-main-last" style="text-align:center; margin-bottom: 0%; margin-top: 0%; padding-top: 1%; padding-bottom: 1%; ">
+
+        <div class="#" >
+            <p >Copyright © 2021, All Rights Reserved  <br> GDSC IIST</p>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" type="text/javascript"></script>
+    <script src="./js/jq.js" type="text/javascript"></script>
+    <script src="./js/team.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+    <script defer=""
+        src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+        integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+        data-cf-beacon="{&quot;rayId&quot;:&quot;6c27ae7efdc3857e&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;05c02d2f126840b0b60af83cc84efb75&quot;,&quot;si&quot;:100}"
+        crossorigin="anonymous"></script>
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
